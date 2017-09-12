@@ -1,0 +1,20 @@
+---
+name: confluence
+
+packages:
+- oraclejdk
+- confluence
+
+templates:
+  bin/confluence_ctl: bin/confluence_ctl
+  bin/monit_debugger: bin/monit_debugger
+  bin/pre-start: bin/pre-start
+  config/confluence.properties: config/confluence.properties
+  data/properties.sh.erb: data/properties.sh
+  helpers/ctl_setup.sh: helpers/ctl_setup.sh
+  helpers/ctl_utils.sh: helpers/ctl_utils.sh
+
+properties:
+  port:
+    description: Bind to this port
+    default: 8080

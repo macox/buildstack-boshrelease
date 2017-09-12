@@ -9,7 +9,7 @@
   path: /instance_groups/name=nexus
 
 - type: remove
-  path: /instance_groups/name=sonarqube
+  path: /instance_groups/name=gerrit
 
 - type: remove
-  path: /instance_groups/name=confluence
+  path: /instance_groups/name=sonarqube

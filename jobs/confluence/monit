@@ -1,0 +1,5 @@
+check process confluence
+  with pidfile /var/vcap/packages/confluence/work/catalina.pid
+  start program "/var/vcap/jobs/confluence/bin/monit_debugger confluence_ctl '/var/vcap/jobs/confluence/bin/confluence_ctl start'"
+  stop program "/var/vcap/jobs/confluence/bin/monit_debugger confluence_ctl '/var/vcap/jobs/confluence/bin/confluence_ctl stop'"
+  group vcap
